@@ -7,13 +7,14 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 100%;
+  line-height: 1.2;
 }
 body {
   min-height: 100vh;
 }
 a {
   text-decoration: none;
-  color: red;
+  color: #fff;
 }
 .logo {
   max-width: 80px;
@@ -21,61 +22,94 @@ a {
 }
 nav h1 {
   font-weight: bold;
+  font-size: 16px;
 }
 .tag {
   font-family: Arial, Helvetica, sans-serif;
   margin-right: 2px;
-  font-size: large;
+  font-size: 17px;
 }
 
 /* featured link  */
 .featured {
   max-width: 380px;
-  margin: 0 auto;
-  background-color: #3ef633;
-  padding: 10px;
+  margin: 10px auto;
+  background-color: #f5f5f5;
+  padding: 5px 8px;
 }
-
+.featured .link {
+  font-size: 17px;
+}
 .link {
-  margin-top: 10px;
-  background-color: blueviolet;
+  margin-top: 8px;
+  background-color: #000;
   border-radius: 5px;
   padding: 10px;
 }
 .link:hover {
-  background-color: antiquewhite;
+  background-color: #05192d;
+  font-size: 17.4px;
 }
 
 /* coding resource */
 .res {
   max-width: 380px;
   margin: 0 auto;
-  background-color: #333333;
+  background-color: #f5f5f5;
   padding: 10px;
 }
 .res .link {
-  text-align: left;
+  /* text-align: left; */
+  background-color: #05192d;
+  font-weight: 500;
+  display: flex;
 }
-
+i {
+  width: 22px;
+  color: #03ef62;
+  padding-top: 1px;
+}
+.fa-html5 {
+  font-size: 20px;
+}
 /* algoexpert  */
 .algo {
-  max-width: 380px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: bisque;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #000;
 }
-.algo h1 {
-  flex-basis: 20%;
+@media (max-width: 380px) {
+  .algo {
+    max-width: 340px;
+    margin: 0 10px;
+  }
+}
+@media (min-width: 380px) {
+  .algo {
+    max-width: 370px;
+  }
+}
+.algo span {
+  color: #fff;
+  font-size: 22px;
+  float: left;
+  font-weight: 600;
 }
 .algo img {
-  width: 50px;
+  width: 40px;
+  text-align: left;
+}
+.algo .code {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 2px;
+  color: #03ef62;
 }
 .algo p {
-  color: aqua;
+  color: #fff;
+  text-align: left;
 }
 
 /* Udemy links  */
@@ -94,11 +128,11 @@ nav h1 {
 .Ulinks a {
   text-align: left;
   display: block;
-  padding: 10px 10px 8px 10px;
+  padding: 10px;
   color: #fff;
   background-color: #003049;
   border-radius: 15px;
-  margin: 0px auto 10px auto;
+  margin: 0px auto 5px auto;
 }
 .Ulinks span {
   padding: 5px 10px 8px 2px;
@@ -117,3 +151,5 @@ iframe {
   max-width: 380px;
   margin: 0 auto;
 }
+
+/* carousel */
